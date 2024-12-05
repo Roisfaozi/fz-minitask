@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Teman</title>
+  </head>
+  <body>
+    <!-- Judul Halaman -->
+    <header>
+      <h1 id="judul-halaman" class="header-title" style="color: blue">
+        Daftar Teman Saya
+      </h1>
+    </header>
+
+    <!-- Konten Biodata -->
+    <section id="biodata-teman" class="biodata-section">
+      <h2>Informasi Biodata</h2>
+      <ul>
+        <li>
+          <strong>Nama:</strong> John Doe <br />
+          <strong>Umur:</strong> 25 Tahun <br />
+          <strong>Hobi:</strong> Membaca, Musik
+        </li>
+        <li>
+          <strong>Nama:</strong> Jane Smith <br />
+          <strong>Umur:</strong> 23 Tahun <br />
+          <strong>Hobi:</strong> Menulis, Traveling
+        </li>
+      </ul>
+    </section>
+
+    <!-- Gambar -->
+    <section id="gambar" class="image-section">
+      <h2>Foto Teman</h2>
+      <!-- Gambar dari URL -->
+      <figure>
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Foto dari URL"
+          title="Foto URL" />
+        <figcaption>Foto dari URL</figcaption>
+      </figure>
+      <!-- Gambar dari relative source -->
+      <figure>
+        <img
+          src="./images/foto-teman.jpg"
+          alt="Foto dari folder lokal"
+          title="Foto Lokal" />
+        <figcaption>Foto dari folder lokal</figcaption>
+      </figure>
+    </section>
+
+    <!-- Elemen Anchor -->
+    <section id="anchor-section" class="anchor-section">
+      <h2>Link Navigasi</h2>
+      <ul>
+        <!-- Absolute Path -->
+        <li>
+          <a href="https://www.google.com" target="_blank" title="Google"
+            >Kunjungi Google</a
+          >
+        </li>
+        <!-- Relative Path -->
+        <li>
+          <a href="./about.html" title="Halaman About">Halaman About</a>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>

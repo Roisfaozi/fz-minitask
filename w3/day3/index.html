@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Task Week 3 Day 2 FGH 23</title>
+  </head>
+  <body>
+    <!-- Form Pencarian -->
+    <h2>Form Pencarian</h2>
+    <form action="/search" method="get">
+      <label for="search">Cari:</label>
+      <input
+        type="text"
+        id="search"
+        name="search"
+        placeholder="Masukkan kata kunci" />
+      <button type="submit">Cari</button>
+    </form>
+
+    <!-- Form Login -->
+    <h2>Form Login</h2>
+    <form action="/login" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- Form Register -->
+    <h2>Form Register</h2>
+    <form action="/register" method="post">
+      <label for="new-username">Username:</label>
+      <input type="text" id="new-username" name="username" required />
+      <br />
+      <label for="new-password">Password:</label>
+      <input type="password" id="new-password" name="password" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <button type="submit">Register</button>
+    </form>
+
+    <!-- Form Bebas -->
+    <h2>Form Bebas</h2>
+    <form action="/submit" method="post">
+      <!-- Input Type Number -->
+      <label for="number">Masukkan angka:</label>
+      <input type="number" id="number" name="number" min="1" max="100" />
+      <br />
+      <!-- Checkbox -->
+      <label>Pilih hobi Anda:</label><br />
+      <input type="checkbox" id="hobi1" name="hobi" value="membaca" />
+      <label for="hobi1">Membaca</label><br />
+      <input type="checkbox" id="hobi2" name="hobi" value="olahraga" />
+      <label for="hobi2">Olahraga</label><br />
+      <!-- Radio Button -->
+      <label>Pilih gender:</label><br />
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Laki-laki</label><br />
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Perempuan</label><br />
+      <!-- Dropdown -->
+      <label for="options">Pilih opsi:</label>
+      <select id="options" name="options">
+        <option value="default" selected>--Pilih--</option>
+        <option value="option1">Opsi 1</option>
+        <option value="option2">Opsi 2</option>
+        <option value="option3">Opsi 3</option>
+      </select>
+      <br />
+      <!-- Input Paragraph -->
+      <label for="comments">Komentar:</label><br />
+      <textarea
+        id="comments"
+        name="comments"
+        rows="2"
+        cols="50"
+        maxlength="50"
+        placeholder="Masukkan komentar"></textarea>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

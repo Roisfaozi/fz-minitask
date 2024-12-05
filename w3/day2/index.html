@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Task Week 3 Day 2 FGH 23</title>
+  </head>
+  <body>
+    <!-- 1. Tabel dengan Caption -->
+    <h2>Tabel dengan Caption</h2>
+    <table border="1">
+      <!-- caption -->
+      <caption>
+        Daftar Buah
+      </caption>
+      <tr>
+        <th>Nama</th>
+        <th>Harga</th>
+      </tr>
+      <tr>
+        <td>Apel</td>
+        <td>10.000</td>
+      </tr>
+      <tr>
+        <td>Jeruk</td>
+        <td>15.000</td>
+      </tr>
+    </table>
+    <!-- Emmet: table>caption+tr>th*2^^tr>td*2 -->
+
+    <!-- 2. Tabel dengan elemen tr, th, td dengan atribut scope -->
+    <h2>Tabel dengan Scope</h2>
+    <table border="1">
+      <tr>
+        <th scope="col">Nama</th>
+        <th scope="col">Harga</th>
+        <th scope="col">Stok</th>
+      </tr>
+      <tr>
+        <td>Anggur</td>
+        <td>25.000</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Pisang</td>
+        <td>12.000</td>
+        <td>100</td>
+      </tr>
+    </table>
+    <!-- Emmet: table>tr>th*3^^tr>td*3 -->
+
+    <!-- 3. Tabel dengan elemen thead, tbody, tfoot, dan colgroup -->
+    <h2>Tabel dengan thead, tbody, tfoot, dan colgroup</h2>
+    <table border="1">
+      <colgroup>
+        <col span="2" style="background-color: #f2f2f2" />
+        <col style="background-color: #d9f2d9" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Nama Barang</th>
+          <th>Jumlah</th>
+          <th>Harga Satuan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monitor</td>
+          <td>2</td>
+          <td>1.500.000</td>
+        </tr>
+        <tr>
+          <td>Keyboard</td>
+          <td>5</td>
+          <td>300.000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td>3.300.000</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- Emmet: table>colgroup>col[span=2]+col^^thead>tr>th*3^^tbody>tr>td*3^^tfoot>tr>td[colspan=2]+td -->
+  </body>
+</html>
