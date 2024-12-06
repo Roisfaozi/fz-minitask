@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Task Week 3 Day 4</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      /* Internal CSS untuk mengubah warna teks */
+      .text-color {
+        color: darkblue;
+      }
+
+      /* Selector ID */
+      #highlight {
+        background-color: yellow;
+      }
+
+      /* Selector Kelas */
+      .box {
+        border: 2px solid black;
+        padding: 10px;
+        background-color: lightgray;
+      }
+
+      /* Selector Elemen */
+      h1 {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      h2 {
+        font-family: Arial, sans-serif;
+        text-align: left;
+        color: hotpink;
+      }
+
+      /* Pseudo-class hover */
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+
+      /* Pseudo-element */
+      p::after {
+        content: ' (Tambahan dari pseudo-element)';
+        font-style: italic;
+        color: gray;
+      }
+
+      /* Posisi relatif */
+      .relative {
+        position: relative;
+        left: 20px;
+        top: 10px;
+        max-height: 100px;
+      }
+
+      /* Posisi absolut */
+      .absolute {
+        position: absolute;
+        left: 50px;
+        top: 100px;
+        border: 1px solid black;
+        padding: 10px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1. Background warna dengan inline CSS -->
+    <div style="background-color: lightblue; padding: 20px">
+      <h1>Halaman HTML dengan Berbagai Teknik Styling</h1>
+    </div>
+
+    <!-- 2. Warna teks menggunakan internal CSS -->
+    <p class="text-color">
+      Ini adalah paragraf dengan warna teks menggunakan internal CSS.
+    </p>
+
+    <!-- 3. Ukuran dan warna teks menggunakan external CSS -->
+    <p class="text-style">
+      Ini adalah paragraf dengan ukuran dan warna teks menggunakan external CSS.
+    </p>
+
+    <!-- 4. Selector ID, kelas, dan elemen -->
+    <div id="highlight">
+      Ini adalah elemen dengan selector ID (background kuning).
+    </div>
+    <div class="box">
+      Ini adalah elemen dengan selector kelas (box dengan border).
+    </div>
+    <h2>Ini adalah elemen dengan selector elemen (h1).</h2>
+
+    <!-- 5. Efek hover dengan pseudo-class -->
+    <a href="#" title="Link Hover Effect">Hover pada link ini</a>
+
+    <!-- 6. Pseudo-element -->
+    <p>Ini adalah paragraf biasa</p>
+
+    <!-- 7. Elemen dengan satuan absolut dan relatif -->
+    <div class="relative">Elemen dengan posisi relatif</div>
+    <div class="relative">
+      <div class="absolute">Elemen dengan posisi absolut</div>
+    </div>
+  </body>
+</html>
