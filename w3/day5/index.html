@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Task Week 3 Day 5</title>
+    <style>
+      /* 1. Flex container dengan grow, shrink, dan basis berbeda */
+      .flex-grow-container {
+        display: flex;
+        gap: 10px;
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+      .flex-grow-container div {
+        background-color: #b0c4de;
+        padding: 20px;
+        border: 1px solid #000;
+      }
+      .grow1 {
+        flex: 1 1 100px; /* Grow: 1, Shrink: 1, Basis: 100px */
+      }
+      .grow2 {
+        flex: 2 0 150px; /* Grow: 2, Shrink: 0, Basis: 150px */
+      }
+      .grow3 {
+        flex: 3 1 50px; /* Grow: 3, Shrink: 1, Basis: 50px */
+      }
+
+      /* 2. Flex container dengan direction column */
+      .flex-column-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 200px;
+        background-color: #f5f5dc;
+        padding: 10px;
+      }
+      .flex-column-container div {
+        background-color: #ffa07a;
+        padding: 10px;
+        margin: 5px;
+      }
+
+      /* 3. Grid container dengan satuan px */
+      .grid-px {
+        display: grid;
+        grid-template-columns: 100px 150px 200px;
+        gap: 10px;
+        background-color: #e6e6fa;
+        padding: 10px;
+      }
+      .grid-px div {
+        background-color: #ffb6c1;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* 4. Grid container dengan satuan fr */
+      .grid-fr {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 10px;
+        background-color: #d8bfd8;
+        padding: 10px;
+      }
+      .grid-fr div {
+        background-color: #87ceeb;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* 5. Grid container dengan area dan konten rata kanan */
+      .grid-area {
+        display: grid;
+        grid-template-areas:
+          'header header'
+          'left right';
+        grid-gap: 10px;
+        background-color: #fffacd;
+        padding: 10px;
+      }
+      .grid-area .header {
+        grid-area: header;
+        text-align: right;
+        background-color: #98fb98;
+      }
+      .grid-area .left {
+        grid-area: left;
+        text-align: right;
+        background-color: #add8e6;
+      }
+      .grid-area .right {
+        grid-area: right;
+        text-align: right;
+        background-color: #f08080;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1. Flex container dengan grow, shrink, dan basis berbeda -->
+    <section>
+      <h2>Flex Container dengan Grow, Shrink, dan Basis Berbeda</h2>
+      <div class="flex-grow-container">
+        <div class="grow1">Grow 1</div>
+        <div class="grow2">Grow 2</div>
+        <div class="grow3">Grow 3</div>
+      </div>
+    </section>
+
+    <!-- 2. Flex container dengan direction column -->
+    <section>
+      <h2>Flex Container dengan Direction Column</h2>
+      <div class="flex-column-container">
+        <div>Child 1</div>
+        <div>Child 2</div>
+        <div>Child 3</div>
+      </div>
+    </section>
+
+    <!-- 3. Grid container dengan satuan px -->
+    <section>
+      <h2>Grid Container dengan Satuan PX</h2>
+      <div class="grid-px">
+        <div>100px</div>
+        <div>150px</div>
+        <div>200px</div>
+      </div>
+    </section>
+
+    <!-- 4. Grid container dengan satuan fr -->
+    <section>
+      <h2>Grid Container dengan Satuan FR</h2>
+      <div class="grid-fr">
+        <div>1fr</div>
+        <div>2fr</div>
+        <div>1fr</div>
+      </div>
+    </section>
+
+    <!-- 5. Grid container dengan area -->
+    <section>
+      <h2>Grid Container dengan Area dan Konten Rata Kanan</h2>
+      <div class="grid-area">
+        <div class="header">Header</div>
+        <div class="left">Left</div>
+        <div class="right">Right</div>
+      </div>
+    </section>
+  </body>
+</html>
