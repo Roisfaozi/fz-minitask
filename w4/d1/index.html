@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Task Week 4 Day 1</title>
+  </head>
+  <body>
+    <h1 id="main-title">Hello, FGH 23!</h1>
+    <p class="info">This is the first paragraph with the class "info".</p>
+    <p class="info">This is the second paragraph with the class "info".</p>
+    <p class="details">This is a paragraph with the class "details".</p>
+
+    <script>
+      console.log('Document Title:', document.title)
+
+      console.log('Window Width:', window.innerWidth)
+      console.log('Window Height:', window.innerHeight)
+
+      const mainTitle = document.getElementById('main-title')
+      console.log("Element with ID 'main-title':", mainTitle)
+
+      const singleInfo = document.querySelector('.info')
+      console.log("First element with class 'info':", singleInfo)
+
+      const allInfoElements = document.querySelectorAll('.info')
+      console.log("All elements with class 'info':", allInfoElements)
+      allInfoElements.forEach((element, index) => {
+        console.log(`Element ${index + 1}:`, element)
+      })
+    </script>
+  </body>
+</html>
