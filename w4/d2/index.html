@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Task Week 4 Day 2</title>
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <script>
+      const container = document.getElementById('container')
+
+      const newElement = document.createElement('p')
+      newElement.innerHTML =
+        'Ini adalah elemen baru yang dibuat dengan <strong>innerHTML</strong>.'
+      container.appendChild(newElement)
+
+      newElement.textContent =
+        'Konten elemen telah diubah menggunakan textContent.'
+
+      newElement.style.color = 'blue'
+      newElement.style.fontSize = '18px'
+
+      const ul = document.createElement('ul')
+      for (let i = 1; i <= 5; i++) {
+        const li = document.createElement('li')
+        li.textContent = `Item ${i}`
+        ul.appendChild(li)
+      }
+      container.appendChild(ul)
+
+      const newDiv = document.createElement('div')
+      const heading = document.createElement('h2')
+      heading.textContent = 'Heading di dalam div'
+      const paragraph = document.createElement('p')
+      paragraph.textContent = 'Ini adalah paragraf di dalam div.'
+      newDiv.appendChild(heading)
+      newDiv.appendChild(paragraph)
+      container.appendChild(newDiv)
+
+      newDiv.innerHTML = ''
+      newDiv.insertAdjacentHTML(
+        'afterbegin',
+        `<h3>Konten baru</h3><p>Konten ini ditambahkan menggunakan insertAdjacentHTML.</p>`
+      )
+    </script>
+  </body>
+</html>
