@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Task - Form JSON</title>
+  </head>
+  <body>
+    <h2>Form Data (JSON Object)</h2>
+    <form id="jsonForm">
+      <label for="nameJson">Nama:</label>
+      <input
+        type="text"
+        id="nameJson"
+        name="name"
+        value="Siti Rahma"
+        required /><br /><br />
+
+      <label for="emailJson">Email:</label>
+      <input
+        type="email"
+        id="emailJson"
+        name="email"
+        value="siti.rahma@example.com"
+        required /><br /><br />
+
+      <label for="city">Kota:</label>
+      <input
+        type="text"
+        id="city"
+        name="city"
+        value="Jakarta"
+        required /><br /><br />
+
+      <button type="button" id="jsonSubmit">Submit</button>
+    </form>
+    <h3>Hasil Object JSON:</h3>
+    <pre id="output2"></pre>
+
+    <script>
+      const button = document.getElementById('jsonSubmit')
+
+      button.onclick = function () {
+        event.preventDefault()
+
+        const formData = {
+          name: document.getElementById('nameJson').value,
+          email: document.getElementById('emailJson').value,
+          city: document.getElementById('city').value,
+        }
+
+        const urlEncodedString = new URLSearchParams(formData).toString()
+
+        document.getElementById('output2').textContent = JSON.stringify(
+          formData,
+          null,
+          2
+        )
+
+        console.log('URL-encoded string:', urlEncodedString)
+      }
+    </script>
+  </body>
+</html>
